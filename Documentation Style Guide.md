@@ -40,7 +40,36 @@ Follow Information Mapping principles to structure content in a way that enhance
 - **Sentence Length:** Limit most sentences to 30 words or fewer.
 - **Line Length:** Limit lines of text to 50–75 characters to improve readability.
 
-## 4. Using Stem Sentences and Section Introductions
+ ### Example of Modular Writing:
+ Instead of writing long paragraphs, structure content into clearly defined blocks:
+ 
+ **Before (Unstructured):**
+ 
+ "To reset your password, go to the login screen. Click on the 'Forgot Password' link. Enter your registered email address and submit the form. Check your email for the reset link and follow the instructions provided."
+ 
+ **After (Structured & Modular):**
+ 
+ #### Resetting Your Password
+ 1. Go to the login screen.
+ 2. Click **Forgot Password**.
+ 3. Enter your registered email address.
+ 4. Click **Submit**.
+ 5. Check your email for the reset link.
+ 6. Follow the instructions in the email to reset your password.
+
+## 4. Breaking Information into Separate Parts
+To improve clarity, categorize content into distinct information types. The following table outlines how to structure different types of information:
+
+| Reader Question to Answer | IM Type to Use | Present With |
+|--------------------------|---------------|--------------|
+| How do I do something? | Procedure | - Step/Action table  <br>- If/Then table |
+| What is happening? <br> How does something work? | Process | - Stage/Description table  <br>- When/Then table |
+| What does something look like? <br> What are its parts? (image) | Structure | - Part/Function table  <br>- Part/Description table |
+| What should I do or not do? (rules, guidelines, policies) | Principle | - Text  <br>- Bulleted/Numbered list  <br>- Table  <br>- Visual |
+| What is something? (definition) | Concept | - Text  <br>- Bulleted/Numbered list  <br>- Table  <br>- Visual |
+| What are the facts? | Fact | - Text  <br>- Bulleted/Numbered list  <br>- Table  <br>- Visual |
+
+## 5. Using Stem Sentences and Section Introductions
 
 - **Stem Sentences:** Before lists, tables, procedures, and screenshots, provide a short introductory sentence that sets context.
 
@@ -58,26 +87,101 @@ Follow Information Mapping principles to structure content in a way that enhance
   **Example:**
   > "There are several types of rates available depending on your product selection. This section provides an overview of each type."
 
-## 5. Breaking Information into Separate Parts
-To improve clarity, categorize content into distinct information types. The following table outlines how to structure different types of information:
+## 6. Documenting Procedures for UI Steps
 
-| Reader Question to Answer | IM Type to Use | Present With |
-|--------------------------|---------------|--------------|
-| How do I do something? | Procedure | - Step/Action table  <br>- If/Then table |
-| What is happening? <br> How does something work? | Process | - Stage/Description table  <br>- When/Then table |
-| What does something look like? <br> What are its parts? (image) | Structure | - Part/Function table  <br>- Part/Description table |
-| What should I do or not do? (rules, guidelines, policies) | Principle | - Text  <br>- Bulleted/Numbered list  <br>- Table  <br>- Visual |
-| What is something? (definition) | Concept | - Text  <br>- Bulleted/Numbered list  <br>- Table  <br>- Visual |
-| What are the facts? | Fact | - Text  <br>- Bulleted/Numbered list  <br>- Table  <br>- Visual |
+### Procedure Templates
+Use this format to document UI steps:
 
-## 6. Bullets and Numbering
+---
+
+## 1. Action List Format (Preferred for Short Procedures)
+
+Use this format for procedures involving simple clicks, selections, or form submissions.
+
+**Template:**
+
+### [Procedure Name]  
+Follow these steps to [brief purpose of the task]:
+
+- [Action command] **[UI Element or menu path]**  
+- [Action command] **[button/icon/menu item]**  
+- Enter the following:  
+  - **[Field name]**: [Instruction]  
+- [Action command] **[e.g., Update]**  
+- [Action command] **[e.g., Save]**
+
+**Result:**  
+[Brief description of the result in present tense].
+
+**Example:**
+
+### Update Your Profile Information  
+Follow these steps to update your profile:
+
+- Click **Profile** in the top navigation bar.  
+- Select **Edit Profile**  
+- Enter the following:  
+  - **First Name**: Enter your legal first name.  
+  - **Last Name**: Enter your legal last name.  
+  - **Phone Number**: Enter your primary contact number.  
+- Click **Update**  
+- Click **Save**
+
+**Result:**  
+Your profile updates and displays the new information.
+
+---
+
+## 2. Step/Action Table Format (Preferred for Complex Data Entry)
+
+Use a Step/Action table when users must complete several fields or actions and a table format improves readability.
+
+**Template:**
+
+| Step | Action |
+|------|--------|
+| 1    | Click **[Menu option]** |
+| 2    | Select **[Sub-option]** |
+| 3    | Enter the following:<br>- **[Field 1]**: [Instruction]<br>- **[Field 2]**: [Instruction] |
+| 4    | Click **[Submit/Save/Finish]** |
+| 5    | Review the confirmation message |
+
+**Result:**  
+[Brief description of the outcome].
+
+**Example:**
+
+| Step | Action |
+|------|--------|
+| 1    | Click **Settings** in the dashboard |
+| 2    | Select **Notification Preferences** |
+| 3    | Enter the following:<br>- **Email Address**: Enter your preferred email<br>- **Phone Number**: Enter your mobile number |
+| 4    | Click **Save Changes** |
+| 5    | Review the confirmation banner at the top of the page |
+
+**Result:**  
+Your updated notification settings are saved.
+
+
+## 7. Bullets and Numbering
 Bulleted and numbered lists make content easier to scan and follow.
 
 - **Use bulleted lists** for non-sequential items.
 - **Use numbered lists** when steps must be followed in order.
 - **Keep list items parallel** in structure (e.g., start each item with a verb if they are action steps).
 
-## 7. Screenshots and Images
+### Examples:
+ #### Bulleted List (Features of the App):
+ - Dark mode for better visibility
+ - Multi-user support
+ - Offline access
+ 
+ #### Numbered List (Steps to Install the Software):
+ 1. Download the installer from the website.
+ 2. Open the downloaded file.
+ 3. Follow the on-screen instructions to complete installation.
+
+## 8. Screenshots and Images
 Visuals enhance comprehension and engagement. Follow these guidelines:
 
 - **Use high-quality, clear screenshots.**
@@ -103,17 +207,30 @@ Visuals enhance comprehension and engagement. Follow these guidelines:
 - When a simple text description is clearer and more efficient.
 - When excessive screenshots would clutter the document and reduce readability.
 
-## 8. Accessibility Guidelines
-Make content accessible to all users, including visually impaired and colorblind users.
+## 9. Accessibility Guidelines
+Make content accessible to all users, including those using screen readers, keyboard navigation, or assistive technologies.
 
-- **Color Contrast:** Ensure sufficient contrast between text and background.
-- **Do Not Rely on Color Alone:** Use labels, icons, or patterns to supplement color.
-- **Alt Text:** Provide meaningful alternative text for all images and screenshots.
-- **Descriptive Links:** Use clear and descriptive text for hyperlinks.
-- **Readable Fonts:** Use clear, sans-serif fonts and ensure font sizes are readable.
-- **Avoid Dense Walls of Text:** Break up long text with headings, lists, and white space.
+### Visual Clarity
+- **Color contrast:** Ensure strong contrast between text and background for readability.  
+- **Don't rely on color alone:** Use labels, icons, or text to convey meaning—not just color.  
+- **Readable fonts:** Use clear sans-serif fonts; avoid tiny or decorative fonts.  
+- **Avoid dense blocks of text:** Use headings, bullets, and white space to improve scannability.
 
-## 9. Grammar and Style Guidelines (Microsoft Manual of Style + CMOS)
+### Images and Media
+- **Alt text:** Add meaningful alt text for all images, diagrams, and icons.  
+- **Minimal text in images:** Don’t embed important information in images—write it out in the body text.  
+- **Captions and labels:** Include captions for charts and graphs, and use text or symbols for color-coded elements.
+
+### Screen Reader Compatibility
+- **Use real headings:** Structure content using Markdown headings (`#`, `##`, `###`) instead of bolded text.  
+- **Descriptive links:** Use specific link text like “Read the accessibility guide” instead of “Click here.”  
+- **Avoid vague references:** Be clear—don’t reference things by location or color alone (e.g., say “Select the **Delete** button” instead of “Click the red button”).
+
+### Keyboard and Interactive Content
+- **Keyboard navigation:** Ensure users can access all interactive elements using just a keyboard.  
+- **ARIA attributes (if web-based):** Use ARIA labels and roles to describe the purpose of UI elements when needed.
+
+## 10. Grammar and Style Guidelines (Microsoft Manual of Style + CMOS)
 To maintain consistency, follow these grammar and style rules:
 
 - **Use active voice** (e.g., "Restart the application" instead of "The application should be restarted").
@@ -132,30 +249,48 @@ To maintain consistency, follow these grammar and style rules:
   - Tell the user what happened.
   - Explain what they can do next.
   - Use friendly, non-alarmist language.
-  - Example: "Invalid password. Try again or reset your password."
+  **Example:** 
+  ✅ "Invalid password. Try again or reset your password."
+  ❌ "Password entry failure. Please rectify error."
+
+### Grammar Rules (CMOS-Informed)
+
+- **Subject-verb agreement:** Ensure subjects and verbs agree in number.  
+  - Correct: "The list of items **is** on the desk."  
+  - Incorrect: "The list of items **are** on the desk."
+
+- **Pronoun-antecedent agreement:** Pronouns must match their antecedents in number and gender.  
+  - Correct: "Each team member submitted **his or her** report."  
+  - Incorrect: "Each team member submitted **their** report."
+
+- **Modifier placement:** Place modifiers near the words they modify to avoid ambiguity.  
+  - Correct: "She **only discussed** the first chapter."  
+  - Incorrect: "She discussed **only** the first chapter."
+
+- **Parallel structure:** Use consistent grammatical patterns for related ideas.  
+  - Correct: "The system is fast, reliable, and easy to use."  
+  - Incorrect: "The system is fast, reliable, and it is easy to use."
+
+- **Use of commas:** Use the Oxford comma for clarity in lists.  
+  - Correct: "The software is compatible with Windows, macOS, and Linux."  
+  - Incorrect: "The software is compatible with Windows, macOS and Linux."
+
+- **Hyphenation:** Use hyphens in compound adjectives before nouns.  
+  - Correct: "User-friendly interface"  
+  - Incorrect: "User friendly interface"
+
+- **Capitalization:** Capitalize proper nouns, product names, trademarks, and official titles.  
+  - Correct: "Microsoft Excel"  
+  - Incorrect: "microsoft excel"
+
+- **Abbreviations and acronyms:** On first use, spell out the term and include the abbreviation in parentheses.  
+  - Correct: "Content Management System (CMS)"  
+  - Incorrect: "CMS (Content Management System)"
+
 - **Punctuation (CMOS Guidelines):**
   - Use the Oxford comma in lists.
   - Hyphenate compound adjectives before nouns (e.g., "user-friendly interface").
   - Periods and commas go inside quotation marks.
-
-## 10. Procedure Templates
-Use this format to document UI steps:
-
-```markdown
-## [Procedure Name]
-
-Follow these steps to [brief purpose]:
-
-1. **[Action command]** [UI element or menu path].
-2. **[Action command]** [button/icon/menu item].
-3. Enter the following:
-   - **[Field name]:** [Instruction].
-4. **[Action command]** [e.g., Update].
-5. **[Action command]** [e.g., Save].
-
-**Result:**  
-[Brief what-happens summary in present tense.]
-```
 
 ---
 

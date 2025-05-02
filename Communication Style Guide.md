@@ -15,7 +15,7 @@ This guide ensures that email communications are **clear, engaging, and easy to 
 ❌ Avoid overly technical or robotic language  
 ❌ Avoid excessive slang, jargon, or idioms  
 
-**Example:**  
+#### Example:  
 - ✅ **Good:** “Hey [Name], your password expires soon! Here’s what you need to do.”  
 - ❌ **Too formal:** “Dear User, this email serves as a notification regarding your upcoming password expiration.”  
 
@@ -27,7 +27,7 @@ This guide ensures that email communications are **clear, engaging, and easy to 
 ✅ **Limit complex words and technical jargon**  
 ✅ Keep **paragraphs short** (1-3 sentences max)  
 
-**Example:**  
+#### Example:  
 - ✅ **Good:** “Your password expires soon. Update it now to stay secure.”  
 - ❌ **Too complex:** “A scheduled password refresh is forthcoming, necessitating user action to maintain system access.”  
 
@@ -38,7 +38,7 @@ This guide ensures that email communications are **clear, engaging, and easy to 
 ✅ Use **second-person ("you")** for engagement  
 ✅ Prioritize **action over explanation**  
 
-**Example:**  
+#### Example:  
 - ✅ **Good:** “📌 **What You Need to Do:** Click below to reset your password.”  
 - ❌ **Too vague:** “Password updates are required per policy guidelines.”  
 
@@ -50,7 +50,7 @@ This guide ensures that email communications are **clear, engaging, and easy to 
 ✅ **Be clear, concise, and engaging**  
 ✅ Use **emojis sparingly** (only if they enhance clarity)  
 
-**Examples:**  
+#### Examples:  
 - ✔ **🚨 Your Password Expires Soon – Here’s What to Do**  
 - ✔ **📢 IT Policy Update: New Password Rules**  
 - ✔ **🎉 Exciting News: Password Changes Just Got Easier!**  
@@ -64,7 +64,7 @@ Use the **Smart Brevity format**:
 2. **Provide essential details** – What the reader needs to know.  
 3. **End with a clear call to action** – What the reader should do next.  
 
-**Example Structure:**  
+#### Example Structure:  
 **Subject:** 🚀 Your Password Expires Soon – Here’s What to Do  
 
 ```plaintext
@@ -82,7 +82,7 @@ Need help? Click below to reset your password.
 
 Thanks for keeping things secure!
 ```
-2.3 Formatting for Readability
+### 2.3 Formatting for Readability
 ✅ Use bullet points & headers to break up information
 ✅ Bold key points for emphasis
 ✅ Use spacing to make content easy to skim
@@ -90,7 +90,7 @@ Thanks for keeping things secure!
 ❌ Avoid long paragraphs
 ❌ Avoid excessive emojis (1-2 per email is fine)
 
-Example:
+#### Example:
 
 📌 What’s Changing?
 
@@ -100,26 +100,24 @@ No more uppercase, number, or special character requirements
 
 You only need to change your password once a year! 🎉
 
-3. Accessibility & Inclusivity
-3.1 Writing for Non-Native English Speakers
+## 3. Accessibility & Inclusivity
+### 3.1 Writing for Non-Native English Speakers
 ✅ Use plain English (avoid idioms or cultural references)
 ✅ Limit wordplay that may not translate well
 ✅ Keep humor simple and universally understandable
 
-Example:
-
+#### Example:
 ✅ Good: “Your password helps keep your account safe. Use a passphrase like PurpleGuitarPlaysLoud to make it stronger.”
-
 ❌ Too complex: “Your password is like your digital house key—don’t let the cyber gremlins steal it!”
 
-3.2 Tone Adjustments Based on Audience
+### 3.2 Tone Adjustments Based on Audience
 Company-wide communications → Friendly but professional
 
 Technical updates → Clear, direct, and minimal fluff
 
 Reminders & follow-ups → Encouraging and concise
 
-4. Checklist Before Sending
+## 4. Checklist Before Sending
 ✅ Is the subject line clear and engaging?
 ✅ Is the key message stated in the first few sentences?
 ✅ Is the tone friendly and approachable?

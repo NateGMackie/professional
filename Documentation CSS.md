@@ -2,7 +2,7 @@ This is a basic CSS to format documentation.
 
 ```css
 /*-------------------------------------
-  General Typography
+  1. General Typography
 -------------------------------------*/
 body {
     font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@ body {
 }
 
 /*-------------------------------------
-  Headings
+  2. Headings
 -------------------------------------*/
 h1 {
     font-size: 22px !important;
@@ -38,18 +38,19 @@ h3 {
 }
 
 /*-------------------------------------
-  Paragraphs
+  3. Paragraphs
 -------------------------------------*/
 p {
     margin-bottom: 12px;
 }
 
 /*-------------------------------------
-  Lists (Ordered & Unordered)
+  4. Lists
 -------------------------------------*/
 ul, ol {
     margin-left: 20px;
     padding-left: 0;
+    list-style-position: inside; /* Required by ServiceNow */
 }
 
 ul li, ol li {
@@ -64,7 +65,7 @@ ol li::marker {
     font-weight: bold;
 }
 
-/* Line breaks in list items */
+/* Fix line breaks in list items */
 ul li br,
 ol li br {
     display: block;
@@ -73,7 +74,7 @@ ol li br {
 }
 
 /*-------------------------------------
-  Tables
+  5. Tables
 -------------------------------------*/
 table {
     width: 100%;
@@ -92,7 +93,7 @@ th, thead {
 }
 
 /*-------------------------------------
-  Code Blocks
+  6. Code Blocks
 -------------------------------------*/
 pre {
     background: #f5f5f5;
@@ -102,7 +103,7 @@ pre {
 }
 
 /*-------------------------------------
-  Links
+  7. Links
 -------------------------------------*/
 a {
     color: #0056b3;
@@ -114,36 +115,55 @@ a:hover {
 }
 
 /*-------------------------------------
-  Callouts (Note, Warning, Example)
+  8. Callouts (Note, Warning, Example)
 -------------------------------------*/
-.note {
-    background: #f9f9f9;
-    border-left: 4px solid #0073e6;
-    padding: 10px;
-    margin: 10px 0;
-}
-
+.note,
+.warning,
 .example-block {
-    background-color: #f9f9f9;
-    border-left: 4px solid #ccc;
     padding: 1em;
+    margin: 1em 0;
     font-family: sans-serif;
     white-space: normal;
+    box-sizing: border-box;
+}
+
+.note {
+    background-color: #f9f9f9;
+    border-left: 4px solid #0073e6;
 }
 
 .warning {
-    background: #fff3cd;
+    background-color: #fff3cd;
     border-left: 4px solid #ff9800;
-    padding: 10px;
-    margin: 10px 0;
+}
+
+.example-block {
+    background-color: #f0f0f0; /* Improved contrast */
+    border-left: 4px solid #aaa; /* Clearer framing */
+}
+
+/* Adjust spacing/indentation inside lists */
+li .note,
+li .warning,
+li .example-block {
+    text-indent: 0;
+    padding-left: 1em;
+    margin-left: 0;
+    display: block;
+}
+
+li > .note,
+li > .warning,
+li > .example-block {
+    margin-top: 0.5em;
 }
 
 /*-------------------------------------
-  User Input Formatting
+  9. User Input Formatting
 -------------------------------------*/
 .user-input {
     font-family: Consolas, monospace;
-    background-color: #f5f5f5;
+    background-color: #e0e0e0; /* Enhanced accessibility */
     padding: 2px 4px;
     border-radius: 3px;
     color: #000;
@@ -151,6 +171,6 @@ a:hover {
 
 .user-input .variable {
     font-style: italic;
-    color: #555;
+    color: #333;
 }
 ```

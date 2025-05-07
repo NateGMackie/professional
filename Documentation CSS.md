@@ -114,18 +114,11 @@ a:hover {
 }
 
 /*-------------------------------------
-  Alerts & Notes
+  Callouts (Note, Warning, Example)
 -------------------------------------*/
 .note {
     background: #f9f9f9;
     border-left: 4px solid #0073e6;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-.warning {
-    background: #fff3cd;
-    border-left: 4px solid #ff9800;
     padding: 10px;
     margin: 10px 0;
 }
@@ -136,5 +129,28 @@ a:hover {
     padding: 1em;
     font-family: sans-serif;
     white-space: normal;
+}
+
+.warning {
+    background: #fff3cd;
+    border-left: 4px solid #ff9800;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/*-------------------------------------
+  User Input Formatting
+-------------------------------------*/
+.user-input {
+    font-family: Consolas, monospace;
+    background-color: #f5f5f5;
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: #000;
+}
+
+.user-input .variable {
+    font-style: italic;
+    color: #555;
 }
 ```

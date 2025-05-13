@@ -173,4 +173,15 @@ li > .example-block {
     font-style: italic;
     color: #333;
 }
+
+/*-------------------------------------
+  10. Screenshots
+-------------------------------------*/
+.screenshot {
+    border: 1px solid #000;
+    display: block;
+    margin: 12px 0;
+    max-width: 100%;
+    height: auto;
+}
 ```

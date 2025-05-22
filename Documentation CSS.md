@@ -24,7 +24,7 @@ h1 {
 h2 {
     font-size: 18px !important;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 8px;
     color: #333;
 }

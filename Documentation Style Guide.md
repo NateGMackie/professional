@@ -1,5 +1,7 @@
 # Technical Writing Style Guide
 
+Following these guidelines ensures that technical documentation remains clear, consistent, user-friendly, accessible, and aligned with industry best practices.
+
 ## 1. Tone and Voice
 Our technical writing should strike a balance between being **direct, action-oriented, and conversational**. This ensures clarity while maintaining engagement.
 
@@ -279,6 +281,16 @@ To maintain consistency, follow these grammar and style rules:
   - Correct: "User-friendly interface"  
   - Incorrect: "User friendly interface"
 
+- **Em dash (—):** Use for breaks in thought, emphasis, or interruptions. Do **not** use spaces on either side.  
+  - Correct: "This step is important—don’t skip it."  
+  - Incorrect: "This step is important — don’t skip it."
+
+- **En dash (–):** Use for numeric ranges and spatial/relational pairings. Do **not** use spaces.  
+  - Correct: "Pages 10–12" 
+  - Correct: "New York–London flight"  
+  - Incorrect: "Pages 10 - 12"  
+  - Incorrect: "New York - London flight"
+
 - **Capitalization:** Capitalize proper nouns, product names, trademarks, and official titles.  
   - Correct: "Microsoft Excel"  
   - Incorrect: "microsoft excel"
@@ -315,5 +327,3 @@ Before publishing your document, check the following:
 - [ ] Error messages are clear and helpful.
 
 ---
-
-Following these guidelines ensures that technical documentation remains clear, consistent, user-friendly, accessible, and aligned with industry best practices.

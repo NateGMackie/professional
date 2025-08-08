@@ -184,4 +184,19 @@ li > .example-block {
     max-width: 100%;
     height: auto;
 }
+/*-------------------------------------
+  11. DRAFT Watermark - Apply conditionally via a class on <body> or wrapper
+-------------------------------------*/
+body.draft::before {
+    content: "DRAFT";
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    font-size: 6em;
+    color: rgba(200, 200, 200, 0.2);
+    z-index: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
 ```

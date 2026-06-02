@@ -1,6 +1,7 @@
 /**
  * Google Docs formatting helpers
  * Apps Script to be used in Google Docs
+ * Updated 6/2/2026 
  */
 
 const DEFAULT_LINE_SPACING = 1.5;
@@ -336,7 +337,8 @@ function insertStepActionTable() {
     }
   }
   placeCursorInCell_(table.getRow(1).getCell(1));
-  applyDocsApiTableSettings_(1, true);
+  const tablePositionIndex = getTablePositionIndex_(table);
+  applyDocsApiTableSettings_(tablePositionIndex, 1, true);
 }
 
 function insert2ColumnTable() {
@@ -370,7 +372,8 @@ function insert2ColumnTable() {
     }
   }
   placeCursorInCell_(table.getRow(1).getCell(1));
-  applyDocsApiTableSettings_(1, true);
+  const tablePositionIndex = getTablePositionIndex_(table);
+  applyDocsApiTableSettings_(tablePositionIndex, 1, true);
 }
 
 function insert3ColumnTable() {
@@ -409,7 +412,8 @@ function insert3ColumnTable() {
     }
   }
   placeCursorInCell_(table.getRow(1).getCell(1));
-  applyDocsApiTableSettings_(1, true);
+  const tablePositionIndex = getTablePositionIndex_(table);
+  applyDocsApiTableSettings_(tablePositionIndex, 1, true);
 }
 
 /* =========
@@ -484,27 +488,59 @@ function placeCursorInCell_(cell) {
   doc.setCursor(documentTab.newPosition(text, 0));
 }
 
-function applyDocsApiTableSettings_(pinnedRows, preventOverflow) {
+function getTablePositionIndex_(tableElement) {
+  const body = getActiveBody_();
+  const tableChildIndex = body.getChildIndex(tableElement);
+
+  let tablePositionIndex = -1;
+
+  for (let i = 0; i <= tableChildIndex; i++) {
+    if (body.getChild(i).getType() === DocumentApp.ElementType.TABLE) {
+      tablePositionIndex++;
+    }
+  }
+
+  return tablePositionIndex;
+}
+
+function applyDocsApiTableSettings_(tablePositionIndex, pinnedRows, preventOverflow) {
   const doc = DocumentApp.getActiveDocument();
   const documentId = doc.getId();
 
   doc.saveAndClose();
 
   const document = Docs.Documents.get(documentId);
-  const tables = document.body.content.filter(element => element.table);
+  const bodyContent = document.body.content;
 
-  if (tables.length === 0) return;
+  let currentTableIndex = -1;
+  let targetTable = null;
 
-  const table = tables[tables.length - 1];
-  const latestTableStartIndex = table.startIndex;
-  const rowIndices = table.table.tableRows.map((row, index) => index);
+  for (let i = 0; i < bodyContent.length; i++) {
+    const element = bodyContent[i];
+
+    if (element.table) {
+      currentTableIndex++;
+
+      if (currentTableIndex === tablePositionIndex) {
+        targetTable = element;
+        break;
+      }
+    }
+  }
+
+  if (!targetTable) {
+    DocumentApp.getUi().alert('The table was inserted, but advanced table settings could not find the target table.');
+    return;
+  }
+
+  const rowIndices = targetTable.table.tableRows.map((row, index) => index);
 
   Docs.Documents.batchUpdate({
     requests: [
       {
         pinTableHeaderRows: {
           tableStartLocation: {
-            index: latestTableStartIndex
+            index: targetTable.startIndex
           },
           pinnedHeaderRowsCount: pinnedRows
         }
@@ -512,7 +548,7 @@ function applyDocsApiTableSettings_(pinnedRows, preventOverflow) {
       {
         updateTableRowStyle: {
           tableStartLocation: {
-            index: latestTableStartIndex
+            index: targetTable.startIndex
           },
           rowIndices: rowIndices,
           tableRowStyle: {

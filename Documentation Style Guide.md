@@ -306,6 +306,112 @@ To maintain consistency, follow these grammar and style rules:
 
 ---
 
+## 11. Document versioning
+
+Use version numbers to communicate the significance of changes made to a document. A consistent versioning system helps readers determine whether a document contains editorial improvements or procedural changes.
+
+### **Version numbering**
+
+Use the following format for all work instructions, standard operating procedures (SOPs), knowledge articles, and similar documents:
+
+**Major.Minor.Review**
+
+| Version | Purpose | Example |
+| ----- | ----- | ----- |
+| **Major** (`X.0`) | Published release containing procedural or functional changes | 2.0 |
+| **Minor** (`X.Y`) | Published release containing editorial or clarification changes | 1.2 |
+| **Review** (`X.Y.Z`) | Internal review drafts that have not been published | 1.2.1 |
+
+### **Major revisions**
+
+Increment the major version when changes affect how work is performed.
+
+Examples include:
+
+* Adding or removing procedure steps  
+* Reordering procedure steps  
+* Introducing new tools, materials, or hardware  
+* Changing safety requirements  
+* Updating acceptance or inspection criteria  
+* Revising the overall workflow
+
+**Examples:**
+
+* 1.0 → 2.0  
+* 2.3 → 3.0
+
+### **Minor revisions**
+
+Increment the minor version when changes improve the document without changing the procedure.
+
+Examples include:
+
+* Correcting spelling or grammar  
+* Updating terminology  
+* Adding or replacing images  
+* Adding a table of contents  
+* Improving formatting  
+* Clarifying instructions without changing the required actions
+
+**Examples:**
+
+* 1.0 → 1.1  
+* 1.1 → 1.2  
+* 2.0 → 2.1
+
+### **Review revisions**
+
+Use the third version number for documents that are undergoing review.
+
+Increment the review number each time a revised draft is distributed for review. Once the document is approved and published, remove the review number and assign the appropriate published version.
+
+**Example (editorial update):**
+
+| Stage | Version |
+| ----- | ----- |
+| Current published document | 1.2 |
+| First review draft | 1.2.1 |
+| Second review draft | 1.2.2 |
+| Published document | 1.3 |
+
+**Example (procedural update):**
+
+| Stage | Version |
+| ----- | ----- |
+| Current published document | 1.2 |
+| First review draft | 1.2.1 |
+| Second review draft | 1.2.2 |
+| Published document | 2.0 |
+
+### **Change log**
+
+Maintain a revision history that summarizes each published release.
+
+Change descriptions should:
+
+* Begin with an action verb.  
+* Briefly describe the user-visible change.  
+* Focus on what changed, not where it changed.  
+* Be specific enough for readers to determine whether the update affects their work.
+
+**Good examples**
+
+| Revision | Change description |
+| ----- | ----- |
+| 1.0 | Created new document |
+| 1.1 | Added table of contents |
+| 1.2 | Changed thread-locking adhesive to Loctite 222 |
+| 2.0 | Added carriage alignment procedure |
+
+**Avoid**
+
+* Updated document  
+* Miscellaneous changes  
+* Various edits  
+* Fixed Step 3
+
+---
+
 # Pre-Publishing Checklist
 
 Before publishing your document, check the following:

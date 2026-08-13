@@ -22,21 +22,21 @@ Conditions that must be met before starting:
 
 ## Safety guidelines
 
-Follow these safety guidelines during the [assembly/installation]:
+Follow these safety guidelines during the [build/installation]:
 
 - Wear safety glasses and steel toe boots at all times
 - Wear gloves when handling metal
 - Use a bump cap when working under mounted structures
 
-## [Assembly/installation] guidelines
+## [Build/installation] guidelines
 
-Follow these guidelines to ensure proper assembly:
+Follow these guidelines to ensure proper [build/installation]:
 
 - Do not fully tighten bolts until alignment is complete
 - Verify track level before securing anchor points
 - Clean work area after each shift
 
-## [Assembly/installation] overview
+## [Build/installation] overview
 
 The following table provides an overview of the main stages:
 
@@ -84,13 +84,13 @@ These conditions must be met before starting:
 
 ## Tools required
 
-These tools are used during [assembly/installation]:
+These tools are used during [build/installation]:
 
 - Torque wrench
 
 ## Hardware required
 
-The following hardware is required during the [assembly/installation]:
+The following hardware is required during the [build/installation]:
 
 | Item | Spec. | Qty |
 | :--- | :--- | :---: |
@@ -98,7 +98,7 @@ The following hardware is required during the [assembly/installation]:
 
 ## Materials required
 
-The following materials are required during the [assembly/installation]:
+The following materials are required during the [build/installation]:
 
 | Item | Spec. | Qty |
 | :--- | :--- | :---: |
@@ -108,15 +108,15 @@ The following materials are required during the [assembly/installation]:
 
 *[Optional: Include only safety guidelines specific to this procedure.]*
 
-Follow these safety guidelines during the [assembly/installation]:
+Follow these safety guidelines during the [build/installation]:
 
 - Wear appropriate PPE
 
-## [Assembly/installation] guidelines
+## [Build/installation] guidelines
 
-*[Optional: Include only assembly/installation guidelines specific to this procedure.]*
+*[Optional: Include only build/installation guidelines specific to this procedure.]*
 
-Follow these guidelines to ensure proper assembly:
+Follow these guidelines to ensure proper [build/installation]:
 
 - Do not fully tighten bolts until alignment is complete
 
@@ -137,7 +137,7 @@ Follow these steps to:
 
 # 📏 Specifications
 
-The following specifications apply during assembly:
+The following specifications apply during [build/installation]:
 
 ## Torque requirements
 
